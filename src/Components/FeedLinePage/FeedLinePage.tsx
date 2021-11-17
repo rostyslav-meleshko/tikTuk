@@ -19,14 +19,13 @@ const FeedLinePage: FC = () => {
   const getFeedLineFromServer = async () => {
     const serverResponse = await serverRequest('/trending/feed')
     try {
+      setFeedLine(serverResponse);
       setIsServerResponsed(true);
     } catch (error) {
       setIsServerResponsed(true);
       setIsServerError(true);
       console.warn(error)
     }
-
-    setFeedLine(serverResponse);
   };
 
   const handlePageChange = (page: number) => {

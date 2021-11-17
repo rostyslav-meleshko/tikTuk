@@ -79,10 +79,10 @@ const FeedContent: FC<FeedContentProps> = ({ feed }) => {
 
         <div className='feed-content__comments'>
           <span>
-            <b>Comments:</b>&nbsp;{roundCommentsValue(feed.commentCount)}
+            <b>Comments:</b>&nbsp;{roundCommentsValue(feed.commentCount)}&nbsp;
           </span>
           <span>
-            <b>Likes:</b>&nbsp; {roundCommentsValue(feed.diggCount)}
+            <b>Likes:</b>&nbsp;{roundCommentsValue(feed.diggCount)}
           </span>
         </div>
       </div>

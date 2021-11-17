@@ -1,4 +1,4 @@
-import React, { FC, useState, useEffect } from 'react';
+import React, { FC, useEffect } from 'react';
 import { FeedLine } from '../../typesDef';
 import { serverRequest } from '../../Helpers/api';
 import Loader from '../Loader/Loader';
