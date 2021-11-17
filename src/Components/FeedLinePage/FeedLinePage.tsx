@@ -51,9 +51,12 @@ const FeedLinePage: FC = () => {
 
   return (
     <div className="container-feedline">
-      <span>FeedLinePage</span>
-
-      {!isServerResponsed && <Loader />}
+      {!isServerResponsed &&
+        <>
+          <Loader />
+          <div>Loading trending videos...</div>
+        </>
+      }
 
       {showableFeedLine.length > 0 &&
         <div className="container-feedline__buttons">

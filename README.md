@@ -1,4 +1,10 @@
+Working app you can test in browser following [this](https://rostyslav-meleshko.github.io/tikTuk/) link.
 
+During the implementation of the task, I met a malfunction on the serverside, calling method 'Get User Feed'. The response was broken. This part of the task was implemented by the replacement method by 'Get Trending Feed'.
+
+Method 'Get User Info' working correctly, but receiving data not so informative to show on the client (missing 'name' and other useful data). This part of the task I solved by adding props from the trending feed line. Implemented by redux. Method remained in <UserInfo> component, just to show, how it will work with good data from the server, and for handling the possible server error.
+
+Navigation between pages was provided with react-router. 
 
 # Getting Started with Create React App
 

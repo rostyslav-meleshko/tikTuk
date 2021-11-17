@@ -40,7 +40,12 @@ const UserInfo: FC<RouteComponentProps<MatchParams>> = ({ match }) => {
   console.log('userInfo from server', userInfo)
   return (
     <>
-      {!isServerResponsed && <Loader />}
+      {!isServerResponsed &&
+        <>
+          <Loader />
+          <div>Loading user info...</div>
+        </>
+      }
 
       {isServerError && <ErrorBlock />}
 

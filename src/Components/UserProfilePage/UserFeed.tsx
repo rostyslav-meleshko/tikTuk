@@ -27,7 +27,12 @@ const UserFeed: FC = () => {
 
   return (
     <>
-      {!isServerResponsed && <Loader />}
+      {!isServerResponsed &&
+        <>
+          <Loader />
+          <div>Loading user videos...</div>
+        </>
+      }
 
       {isServerError && <ErrorBlock />}
 
